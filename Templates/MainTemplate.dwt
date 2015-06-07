@@ -8,15 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    <!-- TemplateBeginEditable name="doctitle" -->
     <title>Kenneth Moreland</title>
-
+    <!-- TemplateEndEditable -->
     <!-- Bootstrap Core CSS -->
-    <link href="_assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../_assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="_assets/css/simple-sidebar.css" rel="stylesheet">
-    <link href="_assets/css/kmorel.css" rel="stylesheet">
+    <link href="../_assets/css/simple-sidebar.css" rel="stylesheet">
+    <link href="../_assets/css/kmorel.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,6 +25,8 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
 </head>
 
 <body>
@@ -55,12 +57,12 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div id="page-title">
-                <h1>Simple Sidebar</h1>
+                <h1><!-- TemplateBeginEditable name="PageTitle" -->Kenneth Moreland<!-- TemplateEndEditable --></h1>
             </div>
-            <div id="page-body">
-                        <p>This template has a <span class="pubTitle">responsive menu toggling system</span>. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-                        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-            </div>
+            <div id="page-body"><!-- TemplateBeginEditable name="PageBody" -->
+              <p>This template has a <span class="pubTitle">responsive menu toggling system</span>. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+              <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+            <!-- TemplateEndEditable --></div>
             <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
         </div>
         <!-- /#page-content-wrapper -->
@@ -69,10 +71,10 @@
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="_assets/js/jquery.js"></script>
+    <script src="../_assets/js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="_assets/js/bootstrap.min.js"></script>
+    <script src="../_assets/js/bootstrap.min.js"></script>
 
     <!-- Menu Toggle Script -->
     <script>
