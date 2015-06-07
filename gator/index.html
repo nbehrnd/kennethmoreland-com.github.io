@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><!-- InstanceBegin template="/Templates/MainTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- 1. begin: SITE TITLE - REQUIRED -->
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Tetrahedral Projection using Vertex Shaders</title>
+<!-- InstanceEndEditable -->
+<!-- 1. end: SITE TITLE - REQUIRED -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="cache-control" content="no-cache" /> 
+<meta http-equiv="pragma" content="no-cache" />
+
+
+<!-- 2. begin: METADATA - REQUIRED -->
+<meta name="keywords" content="Kenneth Moreland visualization large-scale parallel" />
+<meta name="description" content="Home page for Kenneth Moreland" />
+<meta name="sandia.approval_type" content="formal" />
+<meta name="sandia.approved" content="2011-6926 W" />
+<meta name="author" content="Kenneth Moreland" />
+
+<!-- 2. end: METADATA - REQUIRED -->
+<!-- RECOMMENDATION: Obfuscate or shroud all personal names and e-mail addresses to inhibit spambot spiders from collecting this information. To find an e-mail obfuscator Google search the term 'e-mail obfuscator'. -->
+
+<!-- 3. begin: METADATA - NOT REQUIRED -->
+<meta name="subject" content="subject of page" />
+<link rev="owns" title="page owner" href="mailto:kmorel@sandia.gov" />
+<link rev="made, publisher" title="page creator" href="mailto:kmorel@sandia.gov" />
+<meta name="review" content="mm/dd/yyyy" />
+<meta name="sandia.create_date" content="mm/dd/yyyy" />
+<meta name="filename" content="pagename.html" href="mailto:kmorel@sandia.gov" title="page creator" rev="made, publisher" />
+<!-- 3. end: METADATA - NOT REQUIRED -->
+
+<!-- * PRECAUTION: When including personnel names and e-mail addresses in your website consider the potential risk of identity theft! -->
+
+
+<!-- 4. end: SITE CSS - REQUIRED -->
+<link rel="stylesheet" type="text/css" href="/css/home.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/css/sub.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/css/print.css" media="print" />
+<link rel="icon" href="/images2005/snl_icon.png" type="image/png" />
+
+<link rel="stylesheet" type="text/css" href="../../css/kmorel.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../css/kmorel-mobile.css" media="only screen and (max-device-width: 5in)" />
+
+<!-- 4. end: SITE JAVASCRIPT - enables the left navigational higlight feature for subpages -->
+<script src="/Scripts/active_page.js" type="text/javascript"></script>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+
+<a name="Top" id="Top"></a>
+
+<!--IMPORTANT NOTE: DO NOT DELETE THE DIV TAGS IN THE HTML. PAGE WILL NOT RENDER WITHOUT THEM-->
+
+<!-- sandia blue banner include - do not change -->
+<!--#include virtual="/ssi/banner.ssi"-->
+
+
+<div id="container">
+
+<!-- left site navigation include -->
+<!--#include virtual="../../ssi/menu_js.ssi"-->
+
+
+<!-- post your site logo or other links between rightnav div area -->
+<!--#include virtual="../../ssi/contacts.ssi"-->
+
+
+<h2><!-- InstanceBeginEditable name="Page Title" -->Tetrahedral Projection using Vertex Shaders<!-- InstanceEndEditable --></h2>
+
+
+<div id="content-sub"><!-- InstanceBeginEditable name="MainText" -->
+  <p>&quot;<span class="pubTitle">Tetrahedral Projection using Vertex Shaders</span>.&quot; Brian Wylie, Kenneth Moreland, Lee Ann Fisk, and Patricia Crossno. In <em>Proceedings of IEEE Volume Visualization and Graphics Symposium 2002</em>, October 2002, pp. 7&ndash;12.</p>
+  <h3>Abstract</h3>
+  <p>Projective methods for volume rendering currently represent the  best approach for interactive visualization of unstructured data sets.  We present a technique for tetrahedral projection using the programmable  vertex shaders on current generation commodity graphics cards. The  technique is based on Shirley and Tuchman's Projected Tetrahedra (PT)  algorithm and allows tetrahedral elements to be volume scan converted  within the graphics processing unit. Our technique requires no  pre-processing of the data and no additional data structures. Our  initial implementation allows interactive viewing of large unstructured  datasets on a desktop personal computer.</p>
+  <h3>Full Paper</h3>
+  <p><a href="volvis2002.pdf" class="pubTitle">Tetrahedral Projection using Vertex Shaders</a>  </p>
+  <h3>Supplemental Materials<br />
+    </h3>
+  <ul>
+  <li><a href="tetra_linear.nvv"> Vertex program</a> for the GL_NV_vertex_program OpenGL extension.    </li>
+  <li><a href="tetra_linear.arb">Vertex program</a> for the GL_ARB_vertex_program/shader extensions.</li>
+  <li> List of <a href="tetra_linear.params">uniform parameters</a> that need to be loaded.</li>
+  <li><a href="vertex_feedtxt.pdf"> Example OpenGL code</a> that loads the vertex program.</li>
+  <li><a href="gator.cg">Cg vertex program</a> that also implements the tetrahedral projection. </li>
+  </ul>
+<p>&nbsp;</p>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+</div>
+
+<!-- change footer2 per your content -->
+<a name="footer2"></a>
+<!--#include virtual="../../ssi/siteFooter.ssi" -->
+
+
+<!-- sandia footer include - do not change -->
+<!--#include virtual="/ssi/footer.ssi"-->
+
+</div>
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><!-- InstanceBegin template="/Templates/MainTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- 1. begin: SITE TITLE - REQUIRED -->
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Fast High Accuracy Volume Rendering</title>
+<!-- InstanceEndEditable -->
+<!-- 1. end: SITE TITLE - REQUIRED -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="cache-control" content="no-cache" /> 
+<meta http-equiv="pragma" content="no-cache" />
+
+
+<!-- 2. begin: METADATA - REQUIRED -->
+<meta name="keywords" content="Kenneth Moreland visualization large-scale parallel" />
+<meta name="description" content="Home page for Kenneth Moreland" />
+<meta name="sandia.approval_type" content="formal" />
+<meta name="sandia.approved" content="2011-6926 W" />
+<meta name="author" content="Kenneth Moreland" />
+
+<!-- 2. end: METADATA - REQUIRED -->
+<!-- RECOMMENDATION: Obfuscate or shroud all personal names and e-mail addresses to inhibit spambot spiders from collecting this information. To find an e-mail obfuscator Google search the term 'e-mail obfuscator'. -->
+
+<!-- 3. begin: METADATA - NOT REQUIRED -->
+<meta name="subject" content="subject of page" />
+<link rev="owns" title="page owner" href="mailto:kmorel@sandia.gov" />
+<link rev="made, publisher" title="page creator" href="mailto:kmorel@sandia.gov" />
+<meta name="review" content="mm/dd/yyyy" />
+<meta name="sandia.create_date" content="mm/dd/yyyy" />
+<meta name="filename" content="pagename.html" href="mailto:kmorel@sandia.gov" title="page creator" rev="made, publisher" />
+<!-- 3. end: METADATA - NOT REQUIRED -->
+
+<!-- * PRECAUTION: When including personnel names and e-mail addresses in your website consider the potential risk of identity theft! -->
+
+
+<!-- 4. end: SITE CSS - REQUIRED -->
+<link rel="stylesheet" type="text/css" href="/css/home.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/css/sub.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/css/print.css" media="print" />
+<link rel="icon" href="/images2005/snl_icon.png" type="image/png" />
+
+<link rel="stylesheet" type="text/css" href="../../css/kmorel.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../css/kmorel-mobile.css" media="only screen and (max-device-width: 5in)" />
+
+<!-- 4. end: SITE JAVASCRIPT - enables the left navigational higlight feature for subpages -->
+<script src="/Scripts/active_page.js" type="text/javascript"></script>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+
+<a name="Top" id="Top"></a>
+
+<!--IMPORTANT NOTE: DO NOT DELETE THE DIV TAGS IN THE HTML. PAGE WILL NOT RENDER WITHOUT THEM-->
+
+<!-- sandia blue banner include - do not change -->
+<!--#include virtual="/ssi/banner.ssi"-->
+
+
+<div id="container">
+
+<!-- left site navigation include -->
+<!--#include virtual="../../ssi/menu_js.ssi"-->
+
+
+<!-- post your site logo or other links between rightnav div area -->
+<!--#include virtual="../../ssi/contacts.ssi"-->
+
+
+<h2><!-- InstanceBeginEditable name="Page Title" -->Fast High Accuracy Volume Rendering<!-- InstanceEndEditable --></h2>
+
+
+<div id="content-sub"><!-- InstanceBeginEditable name="MainText" -->
+  <div class="pubImage"><img src="../../images/thumbnails/PartialPreIntegration.png" alt="" width="200" height="161" /></div>
+  <p><span class="pubTitle"><em>Fast High Accuracy Volume Rendering</em></span>. Kenneth Moreland. PhD thesis, University of New Mexico, July 2004.</p>
+<p>This page contains links to my Ph.D. dissertation and supplemental material. I have posted two forms of my dissertation.</p>
+<ul>
+    <li><a href="thesis.pdf">A &quot;small&quot; web document (2.7 MB)</a></li>
+    <li><a href="thesis_paperq.pdf">A paper quality version (15 MB)</a></li>
+  </ul>
+  <p>You may also review <a href="PhD_Defense.ppt">the slides presented at my defense</a>.</p>
+  <p>I also captured source code relating to the work to help repeat this work.</p>
+  <ul>
+    <li><a href="sushi.cg"> Vertex and fragment programs</a> (in Cg) used for the rendering</li>
+    <li><a href="PsiGammaTable.h">The 512x512 Psi table</a></li>
+    <li> <a href="PsiGammaTable.c.gz">The 1024x1024 Psi table</a></li>
+  </ul>
+  <hr />
+  <p>For those of you who are really adventurous, I have also archived  the rest of the source code I generated during my Ph.D. program. The  code is contained in a makeshift library called On-Card Algorithms  (OCA). It's basically a bunch of boilerplate encapsulated in C++ objects  to run Cg algorithms that do not fit will within the classical graphics  pipeline. You may or may not find that useful although now there are  more complete solutions such as <a href="http://www.nvidia.com/object/cuda_home.html">CUDA</a>, <a href="http://www.khronos.org/opencl/">OpenCL</a>, and many others<sup><a href="#footnote1">1</a></sup> now available.  </p>
+  <p>In this archive is also the collection of algorithms I happened to be working on at the time, such as <a href="../fftgpu/">The FFT on a GPU</a>. You may enjoy looking through them although many will probably be a bit worthless and other may not even work.</p>
+  <p><a href="oca.tar.gz">Download oca.tar.gz</a></p>
+  <p>You will need <a href="http://www.cmake.org">CMake</a> in order to compile this code.</p>
+  <hr />
+  <ol>
+    <li><a name="footnote1" id="footnote1"></a>By the time you read  this, the list of GPGPU programming systems will probably have changed. See <a href="http://www.gpgpu.org">http://www.gpgpu.org</a> for the latest announcements and information.</li>
+  </ol>
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+</div>
+
+<!-- change footer2 per your content -->
+<a name="footer2"></a>
+<!--#include virtual="../../ssi/siteFooter.ssi" -->
+
+
+<!-- sandia footer include - do not change -->
+<!--#include virtual="/ssi/footer.ssi"-->
+
+</div>
+</body>
+<!-- InstanceEnd --></html>
