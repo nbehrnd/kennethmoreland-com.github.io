@@ -6,35 +6,23 @@
 
 /* Toggle Styles */
 
-#wrapper {
-    padding-left: 0;
+#body-wrapper {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
-#wrapper.toggled {
-    padding-left: 250px;
-}
-
 #sidebar-wrapper {
     z-index: 1000;
-    position: fixed;
-    left: 250px;
-    width: 0;
-    height: 100%;
-    margin-left: -250px;
+    width: 100%;
     overflow-y: auto;
     background: #000;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-}
-
-#wrapper.toggled #sidebar-wrapper {
-    width: 250px;
+    height: 8em;
 }
 
 #page-content-wrapper {
@@ -43,17 +31,11 @@
     padding: 15px;
 }
 
-#wrapper.toggled #page-content-wrapper {
-    position: absolute;
-    margin-right: -250px;
-}
-
 /* Sidebar Styles */
 
 .sidebar-nav {
     position: absolute;
     top: 0;
-    width: 250px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -61,7 +43,6 @@
 
 .sidebar-nav li {
     text-indent: 20px;
-    line-height: 40px;
 }
 
 .sidebar-nav li a {
@@ -82,9 +63,7 @@
 }
 
 .sidebar-nav > .sidebar-brand {
-    height: 65px;
     font-size: 18px;
-    line-height: 60px;
 }
 
 .sidebar-nav > .sidebar-brand a {
@@ -98,6 +77,8 @@
 
 .sidebar-nav > .sidebar-sub {
     list-style: none;
+    height: 0px;
+    visibility: hidden;
 }
 
 .sidebar-nav > .sidebar-sub li {
@@ -105,30 +86,29 @@
     line-height: 20px;
 }
 
-@media(min-width:768px) {
-    #wrapper {
-        padding-left: 250px;
-    }
-
-    #wrapper.toggled {
-        padding-left: 0;
+@media(min-width:37em) {
+    #body-wrapper {
+        padding-left: 17em;
     }
 
     #sidebar-wrapper {
-        width: 250px;
+        margin-left: -17em;
+        width: 17em;
+        height: 100%;
+        position: fixed;
     }
 
-    #wrapper.toggled #sidebar-wrapper {
-        width: 0;
+    .sidebar-nav li {
+        line-height: 40px;
     }
 
-    #page-content-wrapper {
-        padding: 20px;
-        position: relative;
+    .sidebar-nav > .sidebar-brand {
+        height: 65px;
+        line-height: 60px;
     }
 
-    #wrapper.toggled #page-content-wrapper {
-        position: relative;
-        margin-right: 0;
+    .sidebar-nav > .sidebar-sub {
+        height: auto;
+        visibility: visible;
     }
 }

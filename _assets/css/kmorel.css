@@ -235,6 +235,10 @@ caption {
   text-align: left;
 }
 
+#page-title {
+    margin-top: -20px;
+}
+
 /* Custom classes. */
 .leftSubCurrent {
 background-color: #baa588 !important;
