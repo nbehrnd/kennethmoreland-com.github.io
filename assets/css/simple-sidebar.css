@@ -22,11 +22,11 @@
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    height: 8em;
+    height: 110px;
 }
 
 #page-content-wrapper {
-    max-width: 65em;
+    max-width: 960px;
     position: absolute;
     padding: 15px;
 }
@@ -86,14 +86,14 @@
     line-height: 20px;
 }
 
-@media(min-width:37em) {
+@media(min-width:740px) {
     #body-wrapper {
-        padding-left: 17em;
+        padding-left: 230px;
     }
 
     #sidebar-wrapper {
-        margin-left: -17em;
-        width: 17em;
+        margin-left: -230px;
+        width: 230px;
         height: 100%;
         position: fixed;
     }

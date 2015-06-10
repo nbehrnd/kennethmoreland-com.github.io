@@ -14,3 +14,53 @@
     bottom: 0px;
     border-radius: 10px;
 }
+
+/* Gracefully handle when window too small for slideshow. */
+@media(max-width:1200px) {
+    .slideshow {
+        width: 840px;
+        height: 266px;
+    }
+
+    .slideshow > img {
+        width: 840px;
+        height: 266px;
+    }
+}
+
+@media(max-width:1080px) {
+    .slideshow {
+        width: 720px;
+        height: 228px;
+    }
+
+    .slideshow > img {
+        width: 720px;
+        height: 228px;
+    }
+}
+
+@media(max-width:960px) {
+    .slideshow {
+        width: 480px;
+        height: 152px;
+    }
+
+    .slideshow > img {
+        width: 480px;
+        height: 152px;
+    }
+}
+
+/* At this point the sidebar has collapsed. */
+@media(max-width:460px) {
+    .slideshow {
+        width: 300px;
+        height: 95px;
+    }
+
+    .slideshow > img {
+        width: 300px;
+        height: 95px;
+    }
+}
