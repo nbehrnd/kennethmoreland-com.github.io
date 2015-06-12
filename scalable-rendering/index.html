@@ -71,7 +71,21 @@
                 <h1><!-- InstanceBeginEditable name="PageTitle" -->Large Scale Parallel Rendering<!-- InstanceEndEditable --></h1>
             </div>
             <div id="page-body"><!-- InstanceBeginEditable name="PageBody" -->
-              <h2>Coming Soon</h2>
+              <p><img src="../images/thumbnails/scalable-rendering.png" alt="" width="200" height="135" class="pubImage"/>In this work we demonstrate running the scalable rendering library <a href="http://icet.sandia.gov/">IceT</a> at scale on large supercomputers. Along the way we introduce several simple to implement but powerful sort-last parallel rendering modifications that greatly improve the efficiency including minimal copy image interlacing for better load balancing and telescoping compositing for arbitrary job sizes. Visit the <a href="http://icet.sandia.gov/">IceT</a> project page for access to the software, documentation, and further papers and information on scalable rendering.</p>
+              <h2 id="IceTAtScale">An Image Compositing Solution at Scale</h2>
+              <p>&quot;<span class="pubTitle">An Image Compositing Solution at Scale</span>.&quot; Kenneth Moreland, Wesley Kendall, Tom Peterka, and Jian Huang. In<em> Proceedings of 2011 International Conference for High Performance Computing, Networking, Storage and Analysis (SC '11)</em>. November 2011. DOI&nbsp;<a href="http://dx.doi.org/10.1145/2063384.2063417" target="_blank">10.1145/2063384.2063417</a>.</p>
+              <h3>Abstract</h3>
+              <p>The only proven method for performing distributed-memory parallel rendering at large scales, tens of thousands of nodes, is a class of algorithms called sort last. The fundamental operation of sort-last parallel rendering is an image composite, which combines a collection of images generated independently on each node into a single blended image. Over the years numerous image compositing algorithms have been proposed as well as several enhancements and rendering modes to these core algorithms. However, the testing of these image compositing algorithms has been with an arbitrary set of enhancements, if any are applied at all. In this paper we take a leading production-quality imagecompositing framework, IceT, and use it as a testing framework for the leading image compositing algorithms of today. As we scale IceT to ever increasing job sizes, we consider the image compositing systems holistically, incorporate numerous optimizations, and discover several improvements to the process never considered before. We conclude by demonstrating our solution on 64K cores of the Intrepid BlueGene/P at Argonne National Laboratories.</p>
+              <h3>Full Paper</h3>
+              <p><a href="http://dl.acm.org/authorize?6509679"><span class="pubTitle">An Image Compositing Solution at Scale</span></a></p>
+              <h3>Supplemental Material</h3>
+              <p>You can download <a href="IceTAtScaleArtifacts.tar.bz2">the artifacts generated for this paper</a>. This is a collection of the raw timing data collected during the scaling studies.</p>
+              <h2 id="PVG2001">Sort-Last Parallel Rendering on Tile Displays</h2>
+            <p>&quot;<span class="pubTitle">Sort-Last Parallel Rendering for Viewing Extremely Large Data Sets on Tile Displays</span>.&quot; Kenneth Moreland, Brian Wylie, and Constantine Pavlakos. In <em>Proceedings of IEEE 2001 Symposium on Parallel and Large-Data Visualization and Graphics</em>, October 2001, pp. 85&ndash;92.</p>
+              <h3>Abstract</h3>
+              <p>Due to the impressive price-performance of today&rsquo;s PC- based graphics accelerator cards, Sandia National Laboratories is attempting to use PC clusters to render extremely large data sets in interactive applications. This paper describes a sort-last parallel rendering system running on a PC cluster that is capable of rendering enormous amounts of geometry onto high-resolution tile displays by taking advantage of the spatial coherency that is inherent in our data. Furthermore, it is capable of scaling to larger sized input data or higher resolution displays by increasing the size of the cluster. Our prototype is now capable of rendering 120 million triangles per second on a 12 mega-pixel display. </p>
+            <h3>Full Paper</h3>
+            <p><a href="PVG2001.pdf"><span class="pubTitle">Sort-Last Parallel Rendering for Viewing Extremely Large Data Sets on Tile Displays</span></a> </p>
             <!-- InstanceEndEditable --></div>
         </div>
         <!-- /#page-content-wrapper -->
