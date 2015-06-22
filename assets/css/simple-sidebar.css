@@ -86,7 +86,7 @@
     line-height: 20px;
 }
 
-@media(min-width:740px) {
+@media (min-width:740px) {
     #body-wrapper {
         padding-left: 230px;
     }
@@ -110,5 +110,44 @@
     .sidebar-nav > .sidebar-sub {
         height: auto;
         visibility: visible;
+    }
+}
+
+@media print {
+    #body-wrapper {
+        padding-left: 0px !important;
+    }
+
+    #sidebar-wrapper {
+        margin-left: 0px !important;
+        width: 100% !important;
+        height: 65px !important;
+        position: static !important;
+        background: #FFFFFF !important;
+    }
+
+    .sidebar-nav {
+        list-style: none !important;
+        height: 0px !important;
+        visibility: hidden !important;
+    }
+
+    .sidebar-nav li {
+        line-height: 0px !important;
+    }
+
+    .sidebar-nav li a {
+        color: #FFFFFF !important;
+    }
+
+    .sidebar-nav > .sidebar-brand {
+        height: 65px !important;
+        line-height: 60px !important;
+        visibility:visible !important;
+        color:#000000 !important;
+    }
+
+    .sidebar-nav > .sidebar-brand a {
+        color: #000000 !important;
     }
 }
