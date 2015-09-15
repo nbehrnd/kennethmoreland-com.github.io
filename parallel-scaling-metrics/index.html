@@ -9,8 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- InstanceBeginEditable name="doctitle" -->
-<title>Tetrahedral Projection using Vertex Shaders</title>
-<!-- InstanceEndEditable -->
+    <title>Kenneth Moreland</title>
+    <!-- InstanceEndEditable -->
 
     <!-- Custom CSS -->
     <link href="../assets/css/kmorel.css" rel="stylesheet">
@@ -69,25 +69,23 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div id="page-title">
-                <h1><!-- InstanceBeginEditable name="PageTitle" -->Tetrahedral Projection using Vertex Shaders<!-- InstanceEndEditable --></h1>
+                <h1><!-- InstanceBeginEditable name="PageTitle" -->Formal Metrics for Large-Scale Parallel Performance<!-- InstanceEndEditable --></h1>
             </div>
             <div id="page-body"><!-- InstanceBeginEditable name="PageBody" -->
-  <p>&quot;<span class="pubTitle">Tetrahedral Projection using Vertex Shaders</span>.&quot; Brian Wylie, Kenneth Moreland, Lee Ann Fisk, and Patricia Crossno. In <em>Proceedings of IEEE Volume Visualization and Graphics Symposium 2002</em>, October 2002, pp. 7&ndash;12.</p>
-  <h3>Abstract</h3>
-  <p>Projective methods for volume rendering currently represent the  best approach for interactive visualization of unstructured data sets.  We present a technique for tetrahedral projection using the programmable  vertex shaders on current generation commodity graphics cards. The  technique is based on Shirley and Tuchman's Projected Tetrahedra (PT)  algorithm and allows tetrahedral elements to be volume scan converted  within the graphics processing unit. Our technique requires no  pre-processing of the data and no additional data structures. Our  initial implementation allows interactive viewing of large unstructured  datasets on a desktop personal computer.</p>
-  <h3>Full Paper</h3>
-  <p><a href="volvis2002.pdf" class="pubTitle">Tetrahedral Projection using Vertex Shaders</a>  </p>
-  <h3>Supplemental Materials<br />
-    </h3>
-  <ul>
-  <li><a href="tetra_linear.nvv"> Vertex program</a> for the GL_NV_vertex_program OpenGL extension.    </li>
-  <li><a href="tetra_linear.arb">Vertex program</a> for the GL_ARB_vertex_program/shader extensions.</li>
-  <li> List of <a href="tetra_linear.params">uniform parameters</a> that need to be loaded.</li>
-  <li><a href="vertex_feedtxt.pdf"> Example OpenGL code</a> that loads the vertex program.</li>
-  <li><a href="gator.cg">Cg vertex program</a> that also implements the tetrahedral projection. </li>
-  </ul>
-<p>&nbsp;</p>
-<!-- InstanceEndEditable --></div>
+              <div class="pubImage"><img src="../images/thumbnails/parallel-scaling-metrics.svg" width="200" alt=""/></div>
+              <p>&quot;<span class="pubTitle">Formal Metrics for Large-Scale Parallel Performance</span>.&quot; Kenneth Moreland and Ron Oldfield. In <em>High Performance Computing</em>, July 2015. DOI <a href="http://dx.doi.org/10.1007/978-3-319-20119-1_34" target="_self">10.1007/978-3-319-20119-1_34</a>.</p>
+              <h3>Abstract</h3>
+              <p>Performance measurement of parallel algorithms is well studied and well understood. However, a flaw in traditional performance metrics is that they rely on comparisons to serial performance with the same input. This comparison is convenient for theoretical complexity analysis but impossible to perform in large-scale empirical studies with data sizes far too large to run on a single serial computer. Consequently, scaling studies currently rely on ad hoc methods that, although effective, have no grounded mathematical models. In this position paper we advocate using a rate-based model that has a concrete meaning relative to speedup and efficiency and that can be used to unify strong and weak scaling studies.</p>
+              <h3>Full Paper</h3>
+              <p><a href="FormalScalingMetric.pdf"><span class="pubTitle">Formal Metrics for Large-Scale Parallel Performance</span></a></p>
+              <h3>Supplemental Material</h3>
+              <p>You can easily use any spreadsheet program (such as Microsoft Excel) or any other plotting program to generate plots based on the metrics in this paper. The plots in this paper were generated with a Python module called <a href="http://toyplot.readthedocs.org/">toyplot</a>. I built the scripts as self-documenting <a href="http://ipython.org/notebook.html">IPython notebooks</a> and provide them here as supplemental meterial for examples on how to compute and use these metrics. Even if you do not plan to use the same tools I am using, you might find detail useful when replicating the detail yourself. You can <a href="parallel-scaling-plots.tar.gz">download the archive of scripts, data, and results</a> or you can browse the material in the following web pages.</p>
+              <ul>
+                <li><a href="parallel-scaling-plots/PerfectModels.html">Fabricated data from idealized performance and overhead</a>. This data is not used in the paper, but I often use these figures when presenting the work.</li>
+                <li><a href="parallel-scaling-plots/Habib2013.html">Data from a real, good scaling parallel algorithm</a>. This is the source for Figures 1 and 2 in the paper.</li>
+                <li><a href="parallel-scaling-plots/Oldfield2014.html">Data from a real, poorly scaling parallel algorithm</a>. This is the source for Figures 3 and 4 in the paper.</li>
+              </ul>
+            <!-- InstanceEndEditable --></div>
             <div class="imageCredit">SAND 2015-4836 W</div>
         </div>
         <!-- /#page-content-wrapper -->

@@ -43,6 +43,7 @@
                 <li><a href="highlights.html">Research Highlights</a></li>
                 <ul class="sidebar-sub">
                     <li><a href="color-maps/">Color Maps</a></li>
+                    <li><a href="parallel-scaling-metrics/">Parallel Scaling Metrics</a></li>
                     <li><a href="topology-threading/">Topology Threading</a></li>
                     <li><a href="vis-pipelines/">Visualization Pipelines</a></li>
                     <li><a href="scalable-rendering/">Scalable Rendering</a></li>
@@ -72,34 +73,39 @@
             </div>
             <div id="page-body"><!-- InstanceBeginEditable name="PageBody" -->
             <p>I also maintain a <a href="publications.html">complete list of publications and talks</a>.</p>
-    <div class="constrainImage">
+    <div class="constrainImage" id="HighlightColorMap">
       <div class="pubImage"><a href="color-maps/"><img src="images/thumbnails/ColorMaps.png" alt="" width="200" height="131" /></a></div>
-      <div class="pubTitle"><a name="HighlightColorMap" id="HighlightColorMap"></a><a href="color-maps/">Diverging Color Maps for Scientific Visualization</a></div>
+      <div class="pubTitle"><a href="color-maps/">Diverging Color Maps for Scientific Visualization</a></div>
       <div class="pubDescription">Designing the appropriate mapping from values to colors requires a mix of expertise in visualization, color, and perception. Most visualization users and many visualization experts lack the necessary background to design effective color maps. Consequently, many visualizations default to a color map infamous for its ineffectiveness: the rainbow color map. This work provides a method to easily generate a continuum of colors that yield effective and perceptually correct color mapping. In particular, the provided cool to warm color map makes for a good general default color map.</div>
     </div>
-    <div class="constrainImage">
+    <div class="constrainImage" id="HighlightParallelScalingMetrics">
+      <div class="pubImage"><a href="parallel-scaling-metrics/"><img src="images/thumbnails/parallel-scaling-metrics.svg" alt="" width="200" /></a></div>
+      <div class="pubTitle"><a href="parallel-scaling-metrics/">Formal Metrics for Large-Scale Parallel Performance</a></div>
+      <div class="pubDescription">A common practice in studying the scaling performance of large scale parallel algorithms is to look at the behavior of the running time as the number of processing elements changes. This is a very poor way to analyze scaling behavior as good scaling and bad scaling can be visually indistinguishable from each other. This paper demonstrates the problems with using running time to study scaling and describes other metrics, easily derived from running time, that do a much better job characterizing scaling performance.</div>
+    </div>
+    <div class="constrainImage" id="HighlightTopologyThreading">
       <div class="pubImage"><a href="topology-threading/"><img src="images/thumbnails/TopologyThreading.png" alt="" width="200" height="200" /></a></div>
-      <div class="pubTitle"><a name="HighlightTopologyThreading" id="HighlightTopologyThreading"></a><a href="topology-threading/">Finely-Threaded History-Based Topology Computation</a></div>
+      <div class="pubTitle"><a href="topology-threading/">Finely-Threaded History-Based Topology Computation</a></div>
       <div class="pubDescription">As accelerator processors such as GPUs become more prevalent in HPC, the need for running visualization algorithms that process and generate mesh topologies using massive amounts of execution threads becomes ever more pressing. Breaking a mesh into constituent elements to feed input of these threads is straightforward. However, many algorithms require the coordination and combination of results generated in disparate threads. This work provides the basic programming pattern that can be applied to numerous  such algorithms. This critical technique is demonstrated on a variety of algorithms including marching cubes, subdivision, and dual grid generation.</div>
     </div>
-    <div class="constrainImage">
+    <div class="constrainImage" id="HighlightVisPipelines">
       <div class="pubImage"><a href="vis-pipelines/"><img src="images/thumbnails/VisPipelines.png" alt="" width="200" height="164" /></a></div>
-      <div class="pubTitle"><a name="HighlightVisPipelines" id="HighlightVisPipelines"></a><a href="vis-pipelines/">A Survey of Visualization Pipelines</a></div>
+      <div class="pubTitle"><a href="vis-pipelines/">A Survey of Visualization Pipelines</a></div>
       <div class="pubDescription">The most common abstraction used by visualization libraries and applications today is what is known as the visualization pipeline. The visualization pipeline provides a mechanism to encapsulate algorithms and then couple them together in a variety of ways. The visualization pipeline has been in existence for over twenty years, and over this time many variations and improvements have been proposed. This paper provides a literature review of the most prevalent features of visualization pipelines and some of the most recent research directions.</div>
     </div>
-    <div class="constrainImage">
+    <div class="constrainImage" id="HighlightIceTAtScale">
       <div class="pubImage"><a href="scalable-rendering/"><img src="images/thumbnails/scalable-rendering.png" alt="" width="200" height="135" /></a></div>
-      <div class="pubTitle"><a name="HighlightIceTAtScale" id="HighlightIceTAtScale"></a><a href="scalable-rendering/">Large Scale Parallel Rendering</a></div>
+      <div class="pubTitle"><a></a><a href="scalable-rendering/">Large Scale Parallel Rendering</a></div>
       <div class="pubDescription">In this work we demonstrate running the scalable 
     rendering library <a href="http://icet.sandia.gov">IceT</a> at scale on a large supercomputer. Along the way we introduce several simple to implement but powerful sort-last parallel rendering modifications that greatly improve the efficiency including minimal copy image interlacing for better load balancing and telescoping compositing for arbitrary job sizes. Visit the <a href="http://icet.sandia.gov">IceT</a> project page for access to the software, documentation, and further papers and information on scalable rendering.</div></div>
-    <div class="constrainImage">
+    <div class="constrainImage" id="HighlightFFTGPU">
       <div class="pubImage"><a href="fftgpu/"><img src="images/thumbnails/fftgpu.png" alt="" width="200" height="156" /></a></div>
-      <div class="pubTitle"><a name="HighlightFFTGPU" id="HighlightFFTGPU"></a><a href="fftgpu/">The FFT on a GPU</a></div>
+      <div class="pubTitle"><a href="fftgpu/">The FFT on a GPU</a></div>
       <div class="pubDescription">This is, to the best of my knowledge, the first publication describing implementing the Fast Fourier Transform algorithm on a modern graphics processor. The work predates general GPU languages like CUDA and OpenCL, so this implementation uses an older shader language called Cg. Since this paper there have been many improved implementations of the FFT algorithm, but the paper still provides some index manipulations and real transform symmetry encoding that can be useful.</div>
     </div>
-    <div class="constrainImage">
+    <div class="constrainImage" id="HighlightPreIntegration">
       <div class="pubImage"><a href="partial-pre-integration/"><img src="images/thumbnails/PartialPreIntegration.png" alt="" width="200" height="161" /></a></div>
-      <div class="pubTitle"><a name="HighlightPreIntegration" id="HighlightPreIntegration"></a><a href="partial-pre-integration/">Volume Rendering with Partial Pre-Integration</a></div>
+      <div class="pubTitle"><a></a><a href="partial-pre-integration/">Volume Rendering with Partial Pre-Integration</a></div>
       <div class="pubDescription">Partial Pre-Integration is a technique to accelerate the radiative transfer computation used in volume rendering. The technique simplifies the complicated equations by collecting integrands with like parameters and evaluating them with universally applicable tables. (Note that Partial Pre-Integration is <em>not</em> the same as <a href="http://www.vis.uni-stuttgart.de/~engel/pre-integrated/">Pre-Integration</a>, which precomputes all possible integrals in a parameter-specific table.)</div>
     </div>
             <!-- InstanceEndEditable --></div>
