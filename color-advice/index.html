@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/MainTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>Color Map Advice for Scientific Visualization</title>
+    <!-- InstanceEndEditable -->
+
+    <!-- Custom CSS -->
+    <link href="../assets/css/kmorel.css" rel="stylesheet">
+    <link href="../assets/css/simple-sidebar.css" rel="stylesheet">
+    <link href="../assets/css/slideshow.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+
+    <!-- jQuery -->
+    <script src="../assets/js/jquery.js"></script>
+
+    <div id="body-wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="../index.html">Kenneth Moreland</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../highlights.html">Research Highlights</a></li>
+                <ul class="sidebar-sub">
+                    <li><a href="../color-maps/">Color Maps</a></li>
+                    <li><a href="../parallel-scaling-metrics/">Parallel Scaling Metrics</a></li>
+                    <li><a href="../topology-threading/">Topology Threading</a></li>
+                    <li><a href="../vis-pipelines/">Visualization Pipelines</a></li>
+                    <li><a href="../scalable-rendering/">Scalable Rendering</a></li>
+                    <li><a href="../fftgpu/">The FFT on a GPU</a></li>
+                    <li><a href="../partial-pre-integration/">Partial Pre-Integration</a></li>
+                </ul>
+                <li>
+                    <a href="../publications.html">Publications</a>
+                </li>
+                <ul class="sidebar-sub">
+                    <li><a href="../publications.html#journal">Journals and Conferences</a></li>
+                    <li><a href="../publications.html#dissertation">Ph.D. Dissertation</a></li>
+                    <li><a href="../publications.html#tier-3">Symposiums and Workshops</a></li>
+                    <li><a href="../publications.html#tech-report">Technical Reports</a></li>
+                    <li><a href="../publications.html#poster">Posters</a></li>
+                    <li><a href="../publications.html#presentation">Presentations</a></li>
+                </ul>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div id="page-title">
+                <h1><!-- InstanceBeginEditable name="PageTitle" -->Color Map Advice for Scientific Visualization<!-- InstanceEndEditable --></h1>
+            </div>
+            <div id="page-body"><!-- InstanceBeginEditable name="PageBody" -->
+              <p>This page provides advice for using colors in scientific visualization. More specifically, this page provides color maps that you can use while using pseudocoloring of a scalar field. The color maps are organized by how and where they are best used. Each color map shows some example usage and provides color tables in CSV format so that they can readily be used in rendering system textures or entered into visualization software. For simplicity, the color tables are provided in many different lengths and with colors expressed in both bytes (integers between 0 and 255) and floats (decimals between 0.0 and 1.0). Each color map also has instructions on getting these colors in the <a href="http://paraview.org">ParaView visualization application</a>. Where applicable, IPython notebooks containing details about how each color map is generated. You can either run the code directly with the <a href="http://ipython.org/notebook.html">appropriate software</a> or copy/paste scripts into your own interpreter.</p>
+              <p>This work originates from the paper &quot;<a href="#publication"><span class="pubTitle">Why We Use Bad Color Maps and What You Can Do About It</span></a>.&quot; Details about this paper are given below. Another related publication is &quot;<a href="../color-maps/"><span class="pubTitle">Diverging Color Maps for Scientific Visualization</span></a>,&quot; which describes specifics about one particular type of color map. Details of this paper and the techniques used can be found on <a href="../color-maps/">its companion page</a>.</p>
+              <h3 id="colormaps">Color Maps</h3>
+              <h3 id="publication">Publication</h3>
+              <p>&quot;<span class="pubTitle">Why We Use Bad Color Maps and What You Can Do About It</span>.&quot; Kenneth Moreland. In <em>Proceedings of Human Vision and Electronic Imaging (HVEI)</em>, 2016. (To appear)</p>
+              <h4>Abstract</h4>
+              <p>We know the rainbow color map is terrible, and it is emphatically reviled by the visualization community, yet its use continues to persist. Why do we continue to use a this perceptual encoding with so many known flaws? Instead of focusing on why we should not use rainbow colors, this position statement explores the rational for why we do pick these colors despite their flaws. Often the decision is influenced by a lack of knowledge, but even experts that know better sometimes choose poorly. A larger issue is the expedience that we have inadvertently made the rainbow color map become. Knowing why the rainbow color map is used will help us move away from it. Education is good, but clearly not sufficient. We gain traction by making sensible color alternatives more convenient. It is not feasible to force a color map on users. Our goal is to supplant the rainbow color map as a common standard, and we will find that even those wedded to it will migrate away.</p>
+              <h4>Full Paper</h4>
+              <p><a href="BadColorMaps.pdf"><span class="pubTitle">Why We Use Bad Color Maps and What You Can Do About It</span></a></p>
+            <!-- InstanceEndEditable --></div>
+            <div class="imageCredit">SAND 2015-4836 W</div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+</body>
+
+<!-- InstanceEnd --></html>
