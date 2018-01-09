@@ -70,20 +70,26 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div id="page-title">
-                <h1><!-- InstanceBeginEditable name="PageTitle" -->Finely-Threaded History-Based Topology Computation<!-- InstanceEndEditable --></h1>
+                <h1><!-- InstanceBeginEditable name="PageTitle" -->Topology Computation on Many Threads<!-- InstanceEndEditable --></h1>
             </div>
             <div id="page-body"><!-- InstanceBeginEditable name="PageBody" -->
-              <p>&quot;<span class="pubTitle">Finely-Threaded History-Based Topology Computation</span>.&quot; Robert Miller, Kenneth Moreland, and Kwan-Liu Ma. In <em>Eurographics Symposium on Parallel Graphics and Visualization</em>, June 2014. pp. 41&ndash;48. DOI <a href="http://dx.doi.org/10.2312/pgv.20141083" target="_blank">10.2312/pgv.20141083</a>.</p>
+              <p>A challenging aspect of performing scientific visualization in a parallel environment with many threads is finding common topology elements generated concurrently by parallel threads. When parallel threads work on coarse regions of topology (such as in an MPI environment) it is feasible (and common) to simply allow coincident topology to be duplicated. When working with a processor that requires many threads (such as a GPU), there is too much overlap to make duplication feasible. In our reasearch we developed techniques that built unique keys to simplify the identification of common elements.</p>
+              <h2 id="EGPGV2014">Finely-Threaded History-Based Topology Computation</h2>
+              <p>&quot;<span class="pubTitle">Finely-Threaded History-Based Topology Computation</span>.&quot; Robert Miller, Kenneth Moreland, and Kwan-Liu Ma. In <em>Eurographics Symposium on Parallel Graphics and Visualization (EGPGV)</em>, June 2014. pp. 41&ndash;48. DOI <a href="http://dx.doi.org/10.2312/pgv.20141083" target="_blank">10.2312/pgv.20141083</a>.</p>
+              <p>In our initial research we explored the idea of defining a unique integer-based identifier for each topological element. The key insight is that new topologies are typically based on an input topology in visualization, and we can use the indices of the source topology to formulate unique keys.</p>
               <h3>Abstract</h3>
-              <div title="Page 1">
-                <div>
-                  <div>
-                    <p>Graphics and visualization pipelines often make use of highly parallelized algorithms which transform an input mesh into an output mesh. One example is Marching Cubes, which transforms a voxel grid into a triangle mesh approximation of an isosurface. These techniques often discard the topological connectivity of the output mesh, and instead produce a &lsquo;soup&rsquo; of disconnected geometric elements. Calculations that require local neighborhood, such as surface curvature, cannot be performed on such outputs without first reconstructing its topology. We present a novel method for reconstructing topological information across several kinds of mesh transformations, which we demonstrate with GPU and OpenMP implementations. Our approach makes use of input topological elements for efficient location of coincident elements in the output. We provide performance data for the technique for isosurface generation, tetrahedralization, subdivision, and dual mesh generation, and demonstrate its use in visualization pipelines containing further computations of local curvature and mesh coarsening. </p>
-                  </div>
-                </div>
-              </div>
+              <p>Graphics and visualization pipelines often make use of highly parallelized algorithms which transform an input mesh into an output mesh. One example is Marching Cubes, which transforms a voxel grid into a triangle mesh approximation of an isosurface. These techniques often discard the topological connectivity of the output mesh, and instead produce a &lsquo;soup&rsquo; of disconnected geometric elements. Calculations that require local neighborhood, such as surface curvature, cannot be performed on such outputs without first reconstructing its topology. We present a novel method for reconstructing topological information across several kinds of mesh transformations, which we demonstrate with GPU and OpenMP implementations. Our approach makes use of input topological elements for efficient location of coincident elements in the output. We provide performance data for the technique for isosurface generation, tetrahedralization, subdivision, and dual mesh generation, and demonstrate its use in visualization pipelines containing further computations of local curvature and mesh coarsening.</p>
             <h3>Full Paper</h3>
             <p><a href="TopologyThreading.pdf"><span class="pubTitle">Finely-Threaded History-Based Topology Computation</span></a></p>
+            <h2 id="LDAV2017">Techniques for Data-Parallel Searching for Duplicate Elements</h2>
+            <p>&quot;<span class="pubTitle">Techniques for Data-Parallel Searching for Duplicate Elements</span>.&quot; Brenton Lessley, Kenneth Moreland, Matthew Larsen, and Hank Childs. In <em>IEEE Symposium on Large Data Analysis and Visualization (LDAV)</em>, October 2017. DOI <a href="https://dx.doi.org/10.1109/LDAV.2017.8231845" target="_blank">10.1109/LDAV.2017.8231845</a>.</p>
+            <p>In this work, we explored the use of imperfect hashes as keys to identify common topological elements. Although this results in key collisions, the correction for collisions takes less time than the benefit of faster hash grouping. We also explore a &quot;hash-fight&quot; algorithm for external faces that uses a different technique for finding duplicate hashes.</p>
+            <h3>Abstract</h3>
+            <p>We study effective shared-memory, data-parallel techniques for searching   for duplicate elements. We consider several data-parallel approaches,   and how hash function, machine architecture, and data set can affect   performance. We conclude that most choices of algorithm and hash   function are problematic for general usage. However, we demonstrate that   the choice of the Hash-Fight algorithm with the FNV1a hash function has   consistently good performance over all configurations.</p>
+            <h3>Full Paper</h3>
+            <p><a href="LDAV_hashing.pdf"><span class="pubTitle">Techniques for Data-Parallel Searching for Duplicate Elements</span></a></p>
+            <h3>Supplemental Materials</h3>
+            <p>&nbsp;</p>
             <!-- InstanceEndEditable --></div>
             <div class="imageCredit">SAND 2015-4836 W</div>
         </div>
