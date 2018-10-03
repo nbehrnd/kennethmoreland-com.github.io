@@ -37,8 +37,13 @@ renderView1.AxesGrid.ZLabelColor = [0.0, 0.0, 0.0]
 # setup the data processing pipelines
 # ----------------------------------------------------------------
 
+# Find the location of the can.ex2 example file
+import os
+import sys
+can_file = os.path.dirname(sys.executable) + '/../examples/can.ex2'
+
 # create a new 'ExodusIIReader'
-canex2 = ExodusIIReader(FileName=['/Users/kmorel/data/ParaViewTutorialData/can.ex2'])
+canex2 = ExodusIIReader(FileName=[can_file])
 canex2.ElementVariables = ['EQPS']
 canex2.PointVariables = ['DISPL', 'VEL', 'ACCL']
 canex2.GlobalVariables = ['KE', 'XMOM', 'YMOM', 'ZMOM', 'NSTEPS', 'TMSTEP']
@@ -71,5 +76,3 @@ canex2Display = Show(canex2, renderView1)
 canex2Display.AmbientColor = [0.0, 0.0, 0.0]
 canex2Display.ColorArrayName = ['CELLS', 'EQPS']
 canex2Display.LookupTable = eQPSLUT
-canex2Display.CubeAxesColor = [0.0, 0.0, 0.0]
-canex2Display.ScalarOpacityUnitDistance = 1.3901072164734267
